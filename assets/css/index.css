@@ -1,0 +1,1514 @@
+body{
+    overflow-x: hidden;
+}                                   
+                                   
+                                   /* BANNER CSS : START */
+section.banner-main ul > li {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.banner-inner {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.banner-pre-title {
+    padding-top: 65px;
+}
+
+.banner-pre-title h6{
+    font-size: var(--pre-title-1);
+}
+
+.banner-separator {
+    margin-top: 20px;
+}
+
+.banner-title h1 {
+    max-width: 71%;
+    text-align: center;
+    margin: 5px auto 20px;
+}
+
+.banner-sub-title {
+    margin-bottom: 50px;
+    animation-delay: 2.1s;
+    font-size: 16px;
+} 
+
+.current .translate-smooth{
+    transition: animation 0.5s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    animation: toup .7s ease-in forwards;
+}
+
+.current .banner-pre-title{
+    animation-delay: .4s;
+} 
+
+.current .banner-separator{
+    animation-delay: .45s;
+} 
+
+.current .banner-title{
+    animation-delay: .5s;
+}
+.current .banner-sub-title{
+    animation-delay: .55s;
+}
+
+.current .banner-btn{
+    animation-delay: .6s;
+}
+
+@keyframes toup {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(0px,300px,0);
+    }to{
+        opacity: 1;
+        visibility: visible;
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+                             /* SLIDER CSS : START */
+/* SLIDER BTN */
+section.banner-main {
+    position: relative;
+    height: 100vh;
+}
+
+.slider-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+    background: rgb(0 0 0 / 35%);
+    color: white;
+    font-size: 15px;
+    padding: 10px 17px;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s linear;
+}
+
+.slider-btn.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-btn:is(:hover,:focus-visible,:active){
+    background-color: var(--black);
+    color: var(--pre-title-color);
+}
+
+.left{
+    left: 50px;
+}
+
+.right{
+    right: 50px;
+}
+/* SLIDER BTN CSS : END */
+
+#banner-slider > li.current{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    overflow: hidden;
+}
+
+                                    /* SLIDER CSS : END */
+                                    /* BANNER CSS : END */
+
+                                /* MEMORABLE SECTION CSS : START */
+section.memorable {
+    background: var(--black-bg);
+    padding: var(--section-padding);
+}
+
+.memorable-pre-title, .memorable-title, .memorable-sub-title {
+    text-align: center;
+    opacity: 0;
+}
+
+.memorable-pre-title{
+    margin-bottom: var(--margin8);
+}
+
+.memorable-title {
+    max-width: 30%;
+    margin: 0px auto var(--margin20);
+}
+
+.memorable-sub-title {
+    max-width: 60%;
+    margin: 0 auto 20px auto;
+    font-weight: var(--fw-500);
+}
+
+                                    /* ON SCROLL FADEIN ANIMATION : START*/
+.memorable-pre-title, .memorable-title, .memorable-sub-title {
+    opacity: 0;
+}
+
+
+.watch .fadeIntop {
+    animation: fadeIntop 0.5s linear forwards;
+}
+
+@keyframes fadeIntop {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(0px ,100px,0px);
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
+
+.watch .memorable-pre-title{
+    animation-delay: 0.1s;
+}
+.watch .memorable-title{
+    animation-delay: 0.2s;
+}
+.watch .memorable-sub-title{
+    animation-delay: 0.3s;
+}
+
+                                    /* ON SCROLL FADEIN ANIMATION : END*/
+
+        /* MEMORABLE - ROW */
+.memorable-row .width33 {
+    padding: 0px 12px;
+    text-align: center;
+}
+
+.memorable-row .width33 {
+    margin-top: 24px;
+}
+
+.memorable-row {
+    margin: 0px -12px;
+}
+
+.memorable-img img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.memorable-inner {
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    padding: 24px;
+}
+
+.memorable .container .memorable-row .memorable-col-2 .memorable-inner{
+    background-position: center !important;
+}
+.memorable .container .memorable-row .memorable-col-3 .memorable-inner{
+    background-position: right !important;
+}   
+
+.memorable-img {
+    margin-bottom: 30px;
+}
+
+.memorable-col-title {
+    margin-bottom: 8px;
+}
+
+.para-light {
+    color: var(--light);
+    line-height: 27px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+}
+
+/* MEMORABLE ANIMATION :START */
+.memorable-row .width33 {
+    opacity: 0;
+    
+}
+
+.container .watch .scale1{
+    animation: scale1 .5s ease-in forwards;
+}
+
+@keyframes scale1 {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.container .watch .memorable-col-1{
+    animation-delay: 0.1s;
+}
+.container .watch .memorable-col-2{
+    animation-delay: 0.2s;
+}
+.container .watch .memorable-col-3{
+    animation-delay: 0.3s;
+}
+/* MEMORABLE ANIMATION :END */
+
+                                /* MEMORABLE SECTION CSS : END */
+                                /* STORY SECTION CSS : START */
+section.story {
+    padding: var(--section-padding);
+    background: var(--light-bg);
+}
+
+.stroy-row .story-col-1, .stroy-row .story-col-2 {
+    padding: 0 24px;
+}
+
+.stroy-row {
+    margin: 0 -24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-col-2 .story-inner .width50{
+    padding: 0 12px;
+}
+
+.story-col-2 .story-inner .width50 img{
+    width: 255px;
+    height: 424px;
+}
+
+.story-img-row{
+    margin: 0 -12px;
+}
+
+.story-col-1 .story-inner .story-pre-title {
+    margin-bottom: var(--margin8);
+}
+
+.story-col-1 .story-inner .story-title {
+    margin-bottom: var(--margin20);
+}
+
+.story-col-1 .story-inner .story-para-1 {
+    margin-bottom: var(--margin20);
+}
+
+/* ANIMATION ON STORY SECTION : START*/
+.stroy-row .story-col-1{
+    opacity: 0;
+}
+.story-img-row.watch .width50{
+    opacity: 0;
+}
+
+.watch .container .fadeInleft{
+    animation :fadeINleft 0.7s linear forwards;
+}
+
+@keyframes fadeINleft {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(200px,0px,0px);
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
+
+.watch .fadeInright{
+    animation :fadeINright 0.7s linear forwards;
+}
+
+@keyframes fadeINright {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(-200px,0px,0px);
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
+/* ANIMATION ON STORY SECTION : END*/
+
+                                /* STORY SECTION CSS : END */
+                                /* CUSTOMERS SECTION : START */
+section.customers {
+    padding: var(--section-padding);
+    background: var(--black-bg);
+}
+
+.costomers-pre-title, .costomers-title, .costomers-sub-title {
+    text-align: center;
+}
+.costomers-sub-title{
+    max-width: 48%;
+    margin: 0 auto;
+}
+
+.costomers-pre-title {
+    margin-bottom: var(--margin8);
+}
+
+.costomers-title, .costomers-sub-title {
+    margin-bottom: var(--margin20);
+}
+
+                                        /* COSTOMERS ROW CSS : START */
+.costomers-img img {
+    width: 76px;
+    height: 25px;
+    margin-bottom: 25px;
+}
+
+.costomers-col-2 .costomers-img img {
+    width: 101px;
+}
+
+.costomers-row {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -12px;
+}
+
+.costomers-row .width33 {
+    padding: 0 12px;
+    margin-top: 24PX;
+}
+
+.costomers-row .costomers-inner {
+    padding: 25px;
+    border: solid 1px rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.costomers-row .costomers-para {
+    margin-bottom: 40px;
+}
+
+.costomers-sub-row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.costomers-sub-col-2 img {
+    width: 100px;
+    height: 20px;
+}
+
+.costomers-sub-col-2 img {
+    margin-left: auto;
+}
+
+
+.costomers-sub-col-1 .costomers-date {
+    margin-bottom: 0;
+}
+
+.costomers-name h5 {
+    font-family: var(--font-family-2);
+}
+/* COSTOMERS SECTION ANIMATION : START */
+
+.costomers-pre-title, .costomers-title,.costomers-sub-title{
+    opacity: 0;
+}
+.watch .costomers-pre-title{
+    animation-delay: 0s;
+}
+.watch .costomers-title{
+    animation-delay: 0.1s;
+}
+.watch .costomers-sub-title{
+    animation-delay: 0.2s ;
+}
+
+/* for row */
+.costomers-row{
+    overflow-x: hidden;
+}
+
+.costomers-row > div{
+    opacity: 0;
+}
+.costomers-row.watch .costomers-col-1{
+    animation-delay: 0s;
+}
+.costomers-row.watch .costomers-col-2{
+    animation-delay: 0.1s;
+}
+.costomers-row.watch .costomers-col-3{
+    animation-delay: 0.2s;
+}
+
+.costomers-row.watch .fadeinleft{
+    animation :fadeINleft 0.7s linear forwards !important;
+}
+/* COSTOMERS SECTION ANIMATION : END */
+                                    /* COSTOMERS ROW CSS : END */
+                                    /* CUSTOMERS SECTION : END */
+                                    /* DRINKS SECTION CSS : START */
+section.drinks {
+    background: var(--light-bg);
+}
+
+.drinks-col-2-inner {
+    padding: 90px 55px;
+}
+
+.drinks-col-1 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: auto 160%;
+}
+                                    /* FOR TABLE : START */
+.table-menu-title{
+    line-height: var(--line-height-22);
+    font-weight: var(--fw-600);
+}
+
+.table-menu-subtitle  p{
+    font-style: italic;
+    font-size: 14px;
+    line-height: var(--line-height-22);
+    color: var(--light);
+}
+.table-numbers {
+    font-size: 16px;
+    font-weight: var(--fw-bold);
+    line-height: 1.5em;
+    font-weight: var(--fw-700);
+}
+
+table.menu-table{
+    width: 100%;
+}
+
+table.menu-table tr{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-table tr th:nth-child(1), .menu-table tr td:nth-child(1) {
+    width: 60%;
+}
+.menu-table tr th:nth-child(2), .menu-table tr td:nth-child(2) {
+    width: 20%;
+    text-align: center;
+}
+.menu-table tr th:nth-child(3), .menu-table tr td:nth-child(3) {
+    width: 20%;
+    text-align: center;
+}
+
+table.menu-table tr th h6{
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: var(--fw-600);
+    font-family: var(--font-family-1);
+    line-height: 21px;
+}
+.drinks-pre-title {
+    margin-bottom: var(--margin8);
+}
+
+.drinks-title {
+    margin-bottom: var(--margin20);
+}
+
+                                    /* DRINKS SECTION CSS : END */
+                                    /* FOODS SECTION CSS: START */
+section.foods {
+    background-color: var(--light-bg);
+}
+
+.foods-pre-title {
+    margin-bottom: var(--margin8);
+}
+
+.foods-title {
+    margin-bottom: var(--margin20);
+}
+
+.foods-row {
+    flex-direction: row-reverse;
+}
+
+.foods-col-1 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: auto 160%;
+}
+
+
+.foods-col-2-inner {
+    padding: 90px 50px;
+}
+
+table.foods-menu-table tr th:nth-child(1), table.foods-menu-table tr td:nth-child(1) {
+    width: 70%;
+}
+                                    /* FOODS SECTION CSS: END */
+                                    /* CHEFS SECTION CSS: START */
+section.chefs {
+    background-color: var(--black-bg);
+    text-align: center;
+    padding: var(--section-padding);
+}
+
+.chefs-row {
+    justify-content: center;
+    align-items: center;
+    margin: 0 -12px;
+}
+
+.chef-pre-title {
+    margin-bottom: var(--margin8);
+}
+
+.chefs-title {
+    margin-bottom: var(--margin20);
+}
+
+.chefs-row .width25 {
+    margin-top: 30px;
+    padding: 0 12px;
+}
+
+.chefs-col-inner .chefs-img {
+    margin-bottom: var(--margin20);
+}
+
+.chefs-col-inner .chefs-name p {
+    color: var(--light);
+}
+
+.chefs-col-inner .chefs-social {
+    color: var(--pre-title-color);
+    margin-top: var(--margin8);
+}
+
+.chefs-col-inner .chefs-social li {
+    display: inline;
+}
+
+.chefs-col-inner .chefs-social li a {
+    padding: 8px;
+    font-size: 15px;
+    display: inline;
+}
+
+.chefs-col-inner .chefs-social li a:hover {
+    background: var(--white);
+}
+
+/* ANIMATION CSS : START */
+.chef-pre-title, .chefs-title{
+    opacity: 0;
+}
+.watch .chef-pre-title{
+    animation-delay: 0s;
+}
+.watch .chefs-title{
+    animation-delay: 0.1s;
+}
+
+/* for row */
+.chefs-col-1, .chefs-col-2, .chefs-col-3, .chefs-col-4{
+    visibility: hidden;
+}
+
+.watch .fadeInleft{
+    animation: fadeINleft 0.7s linear forwards;
+}
+.watch .chefs-col-1{
+    animation-delay: 0s !important;
+}
+.watch .chefs-col-2{
+    animation-delay: 0.1s !important;
+}
+.watch .chefs-col-3{
+    animation-delay: 0.2s !important;
+}
+.watch .chefs-col-4{
+    animation-delay: 0.3s !important;
+}
+/* ANIMATION CSS : END */
+                                    /* CHEFS SECTION CSS: END */
+                                    /* REVIEW SECTION CSS : START */
+.review-col-1 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 160%;
+}
+
+section.review {
+    background: var(--light-bg);
+}
+
+.review-col-2 {
+    padding: var(--section-padding);
+}
+
+.review-pre-title {
+    margin-bottom: var(--margin8);
+    text-align: center;
+}
+
+.review-title {
+    margin-bottom: var(--margin20);
+    text-align: center;
+}
+
+.review-para h3 {
+    width: 79%;
+    margin: 0 auto;
+}
+
+.review-author {
+    margin-top: var(--margin20);
+    margin-left: 62px;
+}
+
+.review-para {
+    margin-top: 30px;
+}
+/* ANIMATION CSS : START */
+.watch .review-title{
+    animation-delay: 0.1s;
+}
+/* ANIMATION CSS : END */
+                                    /* REVIEW SECTION CSS : END */
+                                    /* CALL SECTION CSS : START */
+section.call {
+    background: var(--black-bg);
+    padding: 50px 0;
+}
+
+.call-row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-row .call-col-1 h4 i {
+    color: var(--pre-title-color);
+    margin-right: 10px;
+}
+
+.call-row .call-col-1 {
+    width: 75%;
+    margin-top: 24px;
+}
+
+.call-row .call-col-2 {
+    width: 25%;
+    text-align: right;
+    margin-top: 24px;
+}
+                                    /* CALL SECTION CSS : END */
+                                    /* OPEN SECTION CSS : START */
+section.open {
+    padding: var(--section-padding);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.open-pre-title {
+    margin-bottom: var(--margin8);
+}
+
+.open-title {
+    margin-bottom: var(--margin20);
+}
+
+.open-row {
+    justify-content: center;
+    align-items: center;
+    margin: 0 -12px;
+}
+
+.open-row .width33 {
+    padding: 0 12px;
+}
+
+.open-days h6 {
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+
+.open-timing h3 {
+    font-family: var(--font-family-2);
+    margin-top: var(--margin8);
+}
+
+/* ANIMATION CSS : START */
+.watch .open-title{
+    animation-delay: .1s;
+}
+
+/* for row */
+.watch .zooin{
+    visibility: visible;
+    animation: zooin 0.9s ease-out forwards;
+}
+
+@keyframes zooin {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.open-col-1{
+    opacity: 0;
+    visibility: hidden;
+}
+.watch .open-col-1{
+    animation-delay: 0s;
+}
+.watch .open-col-2{
+    animation-delay: 0.1s;
+}
+.watch .open-col-3{
+    animation-delay: 0.2s;
+}
+/* ANIMATION CSS : END */
+                                    /* OPEN SECTION CSS : END */
+
+                                    /* MEADIA QUERY : START */
+/* view in 1024px */
+@media (max-width:1199px) {
+    .container{
+        max-width: 966px;
+    }
+    /* MENU TABLE */
+    .story-col-2 .story-inner .width50 img {
+        width: 225px;
+    }
+    
+    /* COSTOMERS CARDS */
+    .costomers-row .costomers-inner {
+        height: 320px;
+    }
+}
+/* view in 768px */
+@media (max-width:1023px) {
+    /* ROOT */
+:root {
+   --h1: 47px;
+   --h2: 45px;
+   --pre-title-1: 8px;
+
+    /* SECTION PADDING && MARGIN */
+    --section-padding:90px 0;
+    --margin8:8px;
+    --margin20:20px
+}
+
+.container {max-width: 720px;}
+
+.story-col-2 .story-inner .width50 img {
+    max-width: 100%;
+    height: auto;
+}
+    /* BANNER MEDIA 768: START */
+.banner-pre-title h6{
+    letter-spacing: 4px;
+}
+
+h1{
+    line-height: 52px;
+}
+
+.banner-separator {margin-top: 15px;}
+
+.banner-sub-title {
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+
+.banner-title h1 {margin: 3px auto 15px;}
+    /* BANNER MEDIA 768: END */
+    /* MEMORABLE SECTION : START*/
+
+    .memorable-title {
+        max-width: 100%;
+    }
+    
+    .memorable-sub-title {
+        max-width: 100%;
+    }
+    
+    .width33 {
+        width: 100%;
+    }
+
+    .memorable-inner{
+        background-size: cover !important;
+    }
+
+    /* MEMORABLE SECTION : END*/
+    /* STORY SECTION : START*/
+    .stroy-row .story-col-1, .stroy-row .story-col-2 {
+        width: 100%;
+    }
+    
+    .story-col-2 .story-inner .width50 img {
+        width: 336px;
+        height: 559px;
+    }
+    
+    .stroy-row {
+        margin: 0;
+    }
+    /* STORY SECTION : END*/
+    /* CONSTOMERS SECTION : START*/
+    .costomers-sub-title {
+        max-width: 100%;
+    }
+    
+    .costomers-row .costomers-inner {
+        height: 235px;
+    }
+    
+    /* CONSTOMERS SECTION : END*/
+    /* MENU TABLE SECTION : START */
+
+    .drinks-col-1 {
+        display: none;
+    }
+    
+    .drinks-row .drinks-col-2 {
+        width: 100%;
+    }
+    
+    .drinks-col-2-inner {
+        padding: 90px 12px;
+    }
+    
+    .foods-col-1 {
+        display: none;
+    }
+    
+    .foods-row .foods-col-2 {
+        width: 100%;
+    }
+    
+    .foods-col-2-inner {
+        padding: 90px 12px;
+    }
+    
+    table.foods-menu-table tr th:nth-child(1), table.foods-menu-table tr td:nth-child(1) {
+        width: 80%;
+    }
+    /* TABLE MENU SECTION : END*/
+    /* CHEFS SECTION */
+    .chefs-row .width25 {
+        width: 50%;
+    }
+    /* REVIEW SECTION  */
+    .review-col-1 {
+        display: none;
+    }
+    
+    .review-col-2 {
+        width: 100%;
+    }
+    
+    .review-author {
+        margin-left: 78px;
+    }
+    
+    .call-row .call-col-1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .call-row .call-col-2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* view in 576px */
+@media (max-width:767px) {
+    .container{
+        max-width: 540px;
+    }
+    /* HEADER MEADIA QUERY : START */
+    .header-mobile-logo {
+        display: block;
+    }
+    
+    .hamburger-icon {
+        display: block;
+    }
+
+    .header-mobile-logo a img {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .header-row {
+        justify-content: space-between !important;
+    }
+
+    .hamburger-icon span {
+        position: absolute;
+        background: red;
+        width: 25px;
+        height: 2px;
+        right: 30px;
+        transition: transform 0.4s linear;
+    }
+    
+    .hamburger-icon span:nth-child(1){
+        top: 24%;
+    }
+    .hamburger-icon span:nth-child(2){
+        top: 35%;
+    }
+    .hamburger-icon span:nth-child(3){
+        top: 47%;
+    }
+
+    .hamburger-icon.active span:nth-child(1){
+        top: 35%;
+        transform: rotate(39deg);
+    }
+
+    .hamburger-icon.active span:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .hamburger-icon.active span:nth-child(3) {
+        top: 35%;
+        transform: rotate(140deg);
+    }
+
+    .hamburger-icon {
+        padding: 0px 27px;
+        cursor: pointer;
+    }
+    
+    /* STYLING OF NAV UL */
+
+    ul#header-nav-ul {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 100%;
+        display: block;
+        left: 0px;
+        z-index: 111;
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: scaleY(0);
+        transition: transform 0.4s ease-in;
+        transform-origin: top;
+    }
+
+    ul#header-nav-ul.navulactive{
+        opacity: 1;
+        visibility: visible;
+        transform: scaleY(1);
+    }
+
+    
+    ul#header-nav-ul > li {
+        display: block;
+        background: var(--pre-title-color);
+        text-align: center;
+    }
+    
+    ul#header-nav-ul > li.logo {
+        display: none;
+    }
+    
+    ul#header-nav-ul > li > a {
+        width: 100%;
+    }
+    
+    ul#header-nav-ul > li > a:hover {
+        background: var(--black);
+        padding-right: 4px;
+    }
+
+    /* HEADER MEADIA QUERY : END */
+    /* BANNER SECTION */
+    :root{
+       /* FONT SIZE */
+       --h1: 35px;
+       --h2: 48px;
+       --h3: 20px;
+       --h4: 18px;
+       --h5: 14px;
+       --pre-title-1: 6px;
+       --pre-title-2: 12px;
+       --body-font: 15px;
+       --header-a: 12px;
+       --btn-a: 13px;
+    
+       /* LINE HEIGHT */
+        --h1-height: 78px;
+        --h2-height: 57.6px;
+        --h3-height: 32px;
+        --h4-height: 21.6px;
+        --h5-height: 16.8px;
+        --h6-height: 14.4px;
+        --header-line-height: 1.2;
+        --body-line-height: 1.8rem;
+        --line-height-22: 22.5px;
+    
+        /* LETTER SPACEING */
+        --letter-spacing-btn-a: 2px;
+    
+        /* SECTION PADDING && MARGIN */
+        --section-padding:90px 0;
+        --margin8:8px;
+        --margin20:20px;
+    }
+
+    .banner-pre-title{
+        padding-top: 22px;
+    }
+
+    .banner-pre-title h6{
+        letter-spacing: 3px;
+        line-height: 13px;
+    }
+
+    .banner-sub-title {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    .banner-separator img {
+        width: 147px;
+        height: 9px;
+    }
+    
+    .banner-separator {
+        margin-top: 10px;
+    }
+    
+    .banner-title h1 {
+        margin: 3px auto 10px auto;
+        line-height: 39px;
+    }
+
+    .banner-sub-title {
+        margin-bottom: 22px;
+    }
+    
+    .btn a {
+        padding: 0px 20px;
+    }
+
+    .header-mobile-logo {
+        padding: 10px 10px 0px;
+    }
+    
+    .header-mobile-logo img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .story-col-2 .story-inner .width50 img {
+        max-width: 100%;
+        height: auto;
+    }
+    .costomers-row .costomers-inner{
+        height: 250px;
+    }
+}
+/* view in 425px */
+@media (max-width:575px) {
+    /* ROOT */
+    :root{
+       /* FONT SIZE */
+       --h1: 30px;
+       --h2: 28px;
+       --h3: 14.5px;
+       --h4: 15px;
+       --h5: 13px;
+       --pre-title-1: 8px;
+       --pre-title-2: 9px;
+       --body-font: 11px;
+       --header-a: 12px;
+       --btn-a: 13px;
+       
+        --header-line-height: 1.2;
+        --body-line-height: 1.2rem;
+        --line-height-22: 17px;
+    
+        /* LETTER SPACEING */
+        --letter-spacing-btn-a: 1.7px;
+    
+        /* SECTION PADDING && MARGIN */
+        --section-padding:50px 0;
+        --margin8:8px;
+        --margin20:14px;
+    }
+
+    .container {
+        max-width: 425px;
+        padding: 0 25px;
+    }
+
+    h3 {
+        line-height: 25px;
+    }
+
+    .para-light{
+        line-height: 20px;
+    }
+
+    /* BANNER 575PX MEDIA */
+    h6{
+        letter-spacing: 0.2rem;
+    }
+    div#slider-left-btn {
+        left: 10px;
+    }
+    
+    div#slider-right-btn {
+        right: 10px;
+    }
+    
+    .btn a {
+        padding: 0px 17px;
+        font-size: 10px;
+    }
+    
+    .slider-btn {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    /* COSTOMERS SECTION */
+    .costomers-row .costomers-inner {
+        width: 351px;
+        height: 220px;
+    }
+
+    /* MENU TABLE */
+    .table-menu-subtitle p{
+        font-size: 11.5px;
+    }
+
+    .table-menu-title{
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .table-numbers{
+        font-size: 12px;
+    }
+
+    /* CHEF SECTION */
+    .chefs-row .width25{
+        width: 80%;
+        padding: 0;
+    }
+
+    .chefs-row {
+        margin: 0;
+    }
+
+    .review-para {
+        margin-top: 18px;
+    }
+    
+    .review-author {
+        margin-left: 40px;
+    }
+    
+    .footer-col-2 .footer-col-inner img {
+        width: 90px;
+        height: 90px;
+    }
+}
+/* view in 375px */
+@media (max-width:424px) {
+        /* ROOT */
+        :root{
+            /* FONT SIZE */
+            --h1: 28px;
+            --h2: 24px;
+            --h3: 13px;
+            --h4: 13px;
+            --h5: 13px;
+            --pre-title-1: 7px;
+            --pre-title-2: 8px;
+            --body-font: 10px;
+            --header-a: 12px;
+            --btn-a: 13px;
+
+             --body-line-height: 1rem;
+             --line-height-22: 17px;
+         
+             /* LETTER SPACEING */
+             --letter-spacing-btn-a: 1.7px;
+         
+             /* SECTION PADDING && MARGIN */
+             --section-padding:40px 0;
+             --margin8:5px;
+             --margin20:7px;
+         }
+         h1 {
+            line-height: 34px;
+        }
+        
+        h3 {
+            line-height: 22px;
+        }
+
+        h2 {
+            line-height: 32px;
+        }
+        
+        .container {
+            max-width: 375px;
+            padding: 0 15px;
+        }
+        
+        .banner-separator {
+            margin-top: 5px;
+        }
+        
+        .banner-title h1 {
+            margin: 2px auto 5px auto;
+        }
+        
+        .btn a {
+            padding: 1px 15px;
+            font-size: 8px;
+        }
+        
+        .para-light {
+            line-height: 17px;
+        }
+        
+        .costomers-row .costomers-inner {
+            width: 325px;
+            height: 215px;
+            padding: 19px;
+        }
+        
+        h5 {
+            line-height: 22px;
+        }
+        
+        .costomers-row .width33 {
+            margin-top: 21PX;
+        }
+        
+        .costomers-row .costomers-para {
+            margin-bottom: 34px;
+        }
+}
+/* view in 319px */
+@media (max-width:319px) {
+    /* ROOT */
+    :root{
+       /* FONT SIZE */
+       --h1: 24.5px;
+       --h2: 21px;
+       --h3: 13px;
+       --h4: 13px;
+       --h5: 12px;
+       --pre-title-1: 6px;
+       --pre-title-2: 7px;
+       --body-font: 10px;
+       --header-a: 10px;
+       --btn-a: 13px;
+    
+       /* LINE HEIGHT */
+        --h1-height: 78px;
+        --h2-height: 57.6px;
+        --h3-height: 32px;
+        --h4-height: 21.6px;
+        --h5-height: 16.8px;
+        --h6-height: 14.4px;
+        --header-line-height: 1.2;
+        --body-line-height: 1rem;
+        --line-height-22: 16.5px;
+    
+        /* LETTER SPACEING */
+        --letter-spacing-btn-a: 1px;
+    
+        /* SECTION PADDING && MARGIN */
+        --section-padding:40px 0;
+        --margin8: 2px;
+        --margin20: 7px
+
+    }
+    /* HEADER  */
+    .header-mobile-logo {
+        padding: 5px 0px 0px 5px;
+    }
+    
+    .header-mobile-logo a img {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .container {
+        max-width: 319px;
+        padding: 0;
+    }
+    
+    .hamburger-icon {padding: 0px 25px;}
+    
+    .hamburger-icon span {
+        right: 15px;
+        width: 23px;
+    }
+
+    /* banner */   
+    .banner-title h1 {
+        line-height: 32px;
+    }
+    
+    h6 {
+        line-height: 13px;
+    }
+    
+    h2 {
+        line-height: 29px;
+    }
+    
+    .memorable-img img {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .memorable-img {
+        margin-bottom: 18px;
+    }
+    
+    .costomers-row .costomers-inner {
+        width: 291px;
+        height: 191px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    
+    .costomers-row .width33 {
+        margin: 20px auto 0 auto;
+        padding: 0;
+    }
+    
+    .costomers-img img {
+        width: 70px;
+        height: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .costomers-row .costomers-para {
+        margin-bottom: 26px;
+    }
+    
+    .costomers-sub-col-2 img {
+        width: 90px;
+        height: 18px;
+    }
+    
+    .drinks-col-2-inner {
+        padding: 40px 10px;
+    }
+    
+    .table-menu-subtitle p {
+        font-size: 10.5px;
+    }
+    
+    table.menu-table tr {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .table-menu-title {
+        font-size: 11px;
+        line-height: 19px;
+    }
+    
+    .foods-col-2-inner {
+        padding: 40px 10px;
+    }
+    
+    .chefs-row .width25 {margin-top: 15px;}
+    
+    .review-author {
+        margin-left: 26px;
+    }
+    
+    .review-para {
+        margin-top: 12px;
+    }
+    
+    h3 {
+        line-height: 21px;
+    }
+    
+    .review-para h3 {
+        width: 83%;
+    }
+    
+    .footer-col-2 .footer-col-inner img {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .costomers-row {
+        margin: 0;
+    }
+
+    table.menu-table tr th h6 {
+        font-size: 10px;
+        line-height: 18px;
+    }
+}
+                                    /* MEADIA QUERY : END */

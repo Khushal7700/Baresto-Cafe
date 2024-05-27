@@ -1,0 +1,140 @@
+                                    /* BANNER SECTION CSS : START */
+.banner-inner {
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-pre-title {
+    padding-top: 80px;
+}
+
+h6 {
+    margin-bottom: var(--margin8);
+}
+
+h2 {
+    margin-bottom: var(--margin20);
+}
+
+.banner-nav a[href = "index.html"] {
+    color: var(--light);
+    letter-spacing: normal;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.banner-nav a {
+    font-family: var(--font-family-2);
+}
+
+.banner-nav a[href = "#"] {
+    margin-left: 8px;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+                                    /* BANNER SECTION CSS : END */
+                                    /* BOOING SECTION CSS : START */
+section.booking {
+    background: var(--black-bg);
+    padding: var(--section-padding);
+}
+
+section.booking .booking-row {
+    margin: 0 -24px;
+}
+
+.booking-row .booking-col-1 {
+    width: 33.33%;
+    padding: 0 24px;
+}
+
+.booking-row .booking-col-2 {
+    width: 66.66%;
+    padding: 0 24px;
+}
+
+.booking-col-2 .booking-inner form input, .booking-col-2 .booking-inner form select,.booking-col-2 .booking-inner form textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 5px 20px;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--pre-title-color);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    appearance: none;
+}
+
+.booking-col-2 .booking-inner form select option{
+    color: black;
+}
+
+
+.booking-col-2 .booking-inner form input:focus-visible, .booking-col-2 .booking-inner form select:focus-visible,.booking-col-2 .booking-inner form textarea:focus-visible{
+    outline: none;
+}
+
+.booking-col-2 .booking-inner form textarea{
+    height: 120px;
+}
+
+form .width33,form .width50 {
+    padding: 0 12px;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+}
+
+form h5 {
+    width: 100%;
+    margin-bottom: 11px;
+    padding: 0 20px;
+}
+
+form .submit-btn {
+    padding: 0 12px;
+    margin-top: 20px;
+    width: 100%;
+}
+                                    /* BOOING SECTION CSS : END */
+
+                                    /* FORM VALIDATION CSS : START */
+.form-col-4{
+    position: relative;
+}
+
+
+span.validation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    color: red;
+    padding: 0px 15px;
+    width: 83%;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+
+span.validation::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 7%;
+    border-width: 9px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}

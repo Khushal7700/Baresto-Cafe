@@ -1,0 +1,46 @@
+                                    /* BANNER SECTION CSS : START */
+.banner-inner {
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-pre-title {
+    padding-top: 80px;
+}
+
+h6 {
+    margin-bottom: var(--margin8);
+}
+
+h2 {
+    margin-bottom: var(--margin20);
+}
+
+.banner-nav a[href = "index.html"] {
+    color: var(--light);
+    letter-spacing: normal;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.banner-nav a {
+    font-family: var(--font-family-2);
+}
+
+.banner-nav a[href = "#"] {
+    margin-left: 8px;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+                                    /* BANNER SECTION CSS : END */

@@ -1,0 +1,202 @@
+                                    /* BANNER SECTION CSS : START */
+.banner-inner {
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-pre-title {
+    padding-top: 80px;
+}
+
+h6 {
+    margin-bottom: var(--margin8);
+}
+
+h2 {
+    margin-bottom: var(--margin20);
+}
+
+.banner-nav a[href = "index.html"] {
+    color: var(--light);
+    letter-spacing: normal;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.banner-nav a {
+    font-family: var(--font-family-2);
+}
+
+.banner-nav a[href = "#"] {
+    margin-left: 8px;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+                                    /* BANNER SECTION CSS : END */
+                                    /* TABLE MENU CSS : START */
+
+.menu-table {
+    background: var(--black-bg);
+}
+
+.menu-table-row {
+    justify-content: center;
+}
+
+.menu-table .reverse {
+    flex-direction: row-reverse;
+}
+
+.menu-table-col-1 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: auto 160%;
+}
+
+.reverse .menu-table-col-1 {
+    background-position: right;
+}
+
+
+.menu-table-inner {
+    padding: 90px 55px;
+}
+
+.table-menu-title{
+    line-height: var(--line-height-22);
+    font-weight: var(--fw-600);
+}
+
+.table-menu-subtitle  p{
+    font-style: italic;
+    font-size: 14px;
+    line-height: var(--line-height-22);
+    color: var(--light);
+}
+.table-numbers {
+    font-size: 16px;
+    font-weight: var(--fw-bold);
+    line-height: 1.5em;
+    font-weight: var(--fw-700);
+}
+
+table.menu-table{
+    width: 100%;
+}
+
+table.menu-table tr{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-table tr th:nth-child(1), .menu-table tr td:nth-child(1) {
+    width: 60%;
+}
+.menu-table tr th:nth-child(2), .menu-table tr td:nth-child(2) {
+    width: 20%;
+    text-align: center;
+}
+.menu-table tr th:nth-child(3), .menu-table tr td:nth-child(3) {
+    width: 20%;
+    text-align: center;
+}
+
+table.menu-table tr th h6{
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: var(--fw-600);
+    font-family: var(--font-family-1);
+    line-height: 21px;
+}
+
+.main-dishes-menu-table tr td:nth-child(1), .snacks-menu-table tr td:nth-child(1) {
+    width: 75%;
+}
+.main-dishes-menu-table tr td .table-menu-subtitle, .snacks-menu-table tr td .table-menu-subtitle{
+    max-width: 70%;
+}
+
+                                    /* TABLE MENU CSS : END */
+
+                                    /* MEDIA QUERY : START */
+/* view in 1199px */
+@media(max-width: 1024px){
+    .menu-table-inner{
+        padding: 90px 30px;
+    }
+}
+
+/* view in 768px */
+@media (max-width: 1023px){
+
+    h2{
+        margin-bottom: 15px;
+    }
+
+    .menu-table-col-1{
+        display: none;
+    }
+    .width50{
+        width: 100%;
+    }
+}
+
+/* view in 576px */
+@media (max-width: 767px){
+    :root{
+        --h2: 32px;
+        --body-font: 14px;
+        --line-height-22: 21px;
+        --section-padding: 60px 0;
+    }
+
+    .menu-table-inner{
+        padding: 60px 10px;
+    }
+
+    .banner-inner {
+        height: 235px;
+    }
+    
+    .banner-pre-title {
+        padding-top: 57px;
+    }
+
+    .table-menu-subtitle p{
+        font-size: 13px;
+    }
+
+    .table-numbers{
+        font-size: 14px;
+    }
+
+    .main-dishes-menu-table tr td .table-menu-subtitle, .snacks-menu-table tr td .table-menu-subtitle{
+        max-width: 75%;
+    }
+}
+
+/* view in 425px */
+@media(max-width : 575px){
+    :root{
+        --header-a: 10px;
+        --letter-spacing-btn-a: 1.5px;
+    }
+    header .container .header-row nav ul li a{
+        padding: 12px;
+    }
+}
+                                    /* MEDIA QUERY : END */
